@@ -4,8 +4,9 @@ Bash
 Javascript
 React
 HTML
-
 CSS
 Git
 Python
 Express.js
+SQL
+DOM
