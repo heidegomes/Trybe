@@ -7,3 +7,5 @@ HTML
 
 CSS
 Git
+Python
+Express.js
