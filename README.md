@@ -1,5 +1,4 @@
 # Trybe
-# Trybe
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Heide Gomes Casagrande](https://www.linkedin.com/in/heide-gomes-casagrande/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
