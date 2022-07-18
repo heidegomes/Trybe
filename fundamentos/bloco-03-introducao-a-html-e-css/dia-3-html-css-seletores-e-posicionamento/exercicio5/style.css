@@ -1,0 +1,9 @@
+.lipar {
+    background-color: yellow;
+    color: green;
+}
+
+.liimpar {
+    background-color: yellow;
+    text-transform: uppercase;
+}
