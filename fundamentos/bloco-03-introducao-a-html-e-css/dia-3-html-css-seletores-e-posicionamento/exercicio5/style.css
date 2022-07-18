@@ -1,19 +1,29 @@
-li {
-    font-size: 20px;
-    background-color: yellow;
+#lifundorosa {
+    background-color: blueviolet;
 }
+
+
 
 .lipar {
     color: green;
+    background-color: yellow;
 }
 
 .liimpar {
     text-transform: uppercase;
+    background-color: yellow;
 }
 
 .liitalico {
     font-weight: 900;
+    
 }
+
+.liazul {
+    color:blue;
+    
+}
+
 
 h1, h2, h3 {
     color: red;
