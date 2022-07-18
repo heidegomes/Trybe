@@ -1,0 +1,42 @@
+#lifundorosa {
+    background-color: blueviolet;
+}
+
+.lipar {
+    color: green;
+    background-color: yellow;
+}
+
+.liimpar {
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+.liitalico {
+    font-weight: 900;
+    
+}
+
+.liazul {
+    color:blue;
+    
+}
+
+
+h1, h2, h3 {
+    color: red;
+}
+
+.h1italico {
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+}
+
+ ul li:hover {
+    color:red; 
+}
+
+ul {
+    text-decoration: none;
+}
