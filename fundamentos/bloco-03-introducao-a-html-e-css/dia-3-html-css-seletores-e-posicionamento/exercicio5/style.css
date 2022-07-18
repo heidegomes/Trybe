@@ -1,11 +1,18 @@
-.lipar {
+li {
+    font-size: 20px;
     background-color: yellow;
+}
+
+.lipar {
     color: green;
 }
 
 .liimpar {
-    background-color: yellow;
     text-transform: uppercase;
+}
+
+.liitalico {
+    font-weight: 900;
 }
 
 h1, h2, h3 {
