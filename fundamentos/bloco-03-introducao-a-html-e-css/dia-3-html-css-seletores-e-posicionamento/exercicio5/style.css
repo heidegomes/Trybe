@@ -2,8 +2,6 @@
     background-color: blueviolet;
 }
 
-
-
 .lipar {
     color: green;
     background-color: yellow;
@@ -33,4 +31,12 @@ h1, h2, h3 {
     font-size: 40px;
     border-style: solid;
     border-color: black;
+}
+
+ ul li:hover {
+    color:red; 
+}
+
+ul {
+    text-decoration: none;
 }
