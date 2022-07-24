@@ -33,7 +33,7 @@ h1, h2, h3 {
     border-color: black;
 }
 
- ul li:hover {
+ul li:hover {
     color:red; 
 }
 
