@@ -32,9 +32,17 @@ let info2 = {
   recorrente: 'Sim'
 };
 
-for (let index in info) {
-  console.log(info[index] + ' e ' + info2[index]); 
-};
+for (let properties in info) {
+  if (
+    properties === 'recorrente' &&
+    info[properties] === 'Sim' &&
+    info2[properties] === 'Sim'
+  ) {
+    console.log('Ambos recorrentes');
+  } else {
+    console.log(info[properties] + ' e ' + info2[properties]);
+  }
+}
 
 /* 6 - Acesse as chaves nome, sobrenome e titulo, que está dentro da chave livrosFavoritos, e faça um console.log no seguinte formato: "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'". Não resolvido */
 
@@ -51,16 +59,19 @@ let leitor = {
   ],
 };
 
-console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos.titulo + '.')
+console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo + '.')
 
 /* 7 - Adicione um novo livro favorito na chave livrosFavoritos, que é um array. Não resolvido, substituiu ao invés de adicionar */
 
-leitor.livrosFavoritos = [{
+leitor.livrosFavoritos.push({
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
   autor: 'JK Rowling',
   editora: 'Rocco',
-}]
+})
 
 console.log(leitor);
 
 /* 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos". Não resolvido */
+
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.');
+
