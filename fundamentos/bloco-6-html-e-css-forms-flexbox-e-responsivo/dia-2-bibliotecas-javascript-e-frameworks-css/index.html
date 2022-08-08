@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1 class="display-4 text-muted">FORMULÁRIO</h1>
+  <form action="" method="GET" enctype="multipart/formdata">
+    <div class="form-group">
+      <label for="nome-completo">Nome Completo:
+        <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="e-mail">E-mail:
+        <input type="e-mail" name="email" id="input-email" placeholder="Digite seu e-mail" required>
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="">Estado onde você mora:
+        <select class="form-control" name="estado" id="input-estado">
+          <option value="sp">São Paulo</option>
+          <option value="mg">Minas Gerais</option>
+          <option value="ap" selected>Amapá</option>
+          <option value="rs">Rio Grande do Sul</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Selecione sua foto:</p>
+      <input class="form-control btn btn-warning" type="file" name="foto" id="foto-perfil">
+    </div>
+    <div class="form-group">
+      <p>Comidas Favoritas:</p>
+      <label for="comida-1">
+        <input class="form-control" type="radio" id="comida-1" name="comida-favorita" value="pizza">Pizza
+      </label>
+      <label for="comida-2">
+        <input class="form-control" type="radio" id="comida-2" name="comida-favorita" value="sorvete">Sorvete
+      </label>
+      <label for="comida-3">
+        <input class="form-control" type="radio" id="comida-3" name="comida-favorita" value="pão de queijo">Pão de Queijo
+      </label>
+      <label for="comida-4">
+        <input class="form-control" type="radio" id="comida-4" name="comida-favorita" value="outro">Outro
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Escreva algo sobre você</p>
+      <textarea class="form-control" name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+      <p>Digite sua senha:</p>
+      <label for="input-senha">
+        <input class="form-control" type="password" name="senha" id="input-senha" required>
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="checkbox-noticias">
+        <input class="form-control" type="checkbox" name="promocoes" id="checkbox-noticias">Deseja receber notícias e promoções incríveis?
+      </label>
+      <br>
+      <button class="btn btn-success" type="submit">Enviar Formulário</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
