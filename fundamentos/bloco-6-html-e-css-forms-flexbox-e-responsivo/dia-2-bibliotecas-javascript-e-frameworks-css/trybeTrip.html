@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe Trip</title>
+  <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-sm">
+  <h1 class="display-4 text-muted">FORMULÁRIO</h1>
+  <form action="" method="GET" enctype="multipart/formdata">
+    <div class="form-group">
+      <label for="nome-completo">Nome Completo:
+        <input class="form-control type=" text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+      </label>
+      <br>
+      <label for="e-mail">E-mail:
+        <input class="form-control type=" e-mail" name="email" id="input-email" placeholder="Digite seu e-mail"
+          required>
+      </label>
+    </div>
+    <div class="container">
+      <br>
+      <h5>Qual seu destino favorito?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="lugar-1" name="lugar-preferido" value="cidade">Cidade
+        <label for="lugar-1" class="form-check-label">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="lugar-2" name="lugar-preferido" value="campo">Campo
+        <label for="lugar-2" class="form-check-label">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="lugar-3" name="lugar-preferido" value="praia">Praia
+        <label for="lugar-3" class="form-check-label">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="lugar-4" name="lugar-preferido" value="montanhas">Montanhas
+        <label for="lugar-4" class="form-check-label">
+        </label>
+      </div>
+    </div>
+
+    <div class= "container">
+      <h5>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h5>
+      <textarea name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+    </div>
+
+    <div class= "container">
+      <h5>Qual a melhor data para realizar sua viagem?</h5>
+      <label for="data">Data:</label>
+      <input type=" date" id="data" name="date">
+    </div>
+
+    <div class="container">
+      <div>
+        <input class="form-check-input" type="checkbox" name="oportunidades" id="checkbox-oportunidades">Gostaria de receber
+        outras incríveis
+        oportunidades oferecidas pela Trybe?
+        <label for="checkbox-oportunidades" class="form-check-label">
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" name="imagens" id="checkbox-imagens">Concordo que imagens das
+        minhas férias poderão ser
+        usadas na divulgação de concursos futuros.
+        <label for="checkbox-imagens" class="form-check-label">
+      </div>
+    </div>
+
+    <br>
+    <button type="submit">Enviar Formulário</button>
+  </form>
+</body>
+
+</html>
