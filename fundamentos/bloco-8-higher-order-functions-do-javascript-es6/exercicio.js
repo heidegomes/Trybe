@@ -82,3 +82,8 @@ function someBookWasReleaseOnThe80s() {
 }
 
 console.log(someBookWasReleaseOnThe80s());
+
+//arrow function
+const someBookWasReleaseOnThe80s = books.some((livro) => (livro.releaseYear >= 1981 && livro.releaseYear <= 1990 ));
+
+console.log(someBookWasReleaseOnThe80s());
