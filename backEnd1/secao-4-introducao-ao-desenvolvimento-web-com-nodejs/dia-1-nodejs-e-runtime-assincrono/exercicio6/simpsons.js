@@ -34,12 +34,50 @@ async function filterSimpsons(){
   await fs.writeFile('./simpsons.json', JSON.stringify(newArray)); //chamada da promise, que escreve o nosso arquivo
 }
 
+//Exercicio D
+async function createSimpsonsFamily(){
+  const fileContent = await fs
+  .readFile('./simpsons.json', 'utf-8');
+
+  const simpsons = JSON.parse(fileContent);
+  const familyIds = [1, 2, 3, 4];
+  const simpsonsFamily = simpsons
+  .filter((simpson) => familyIds.includes(Number(simpson.id)));
+  await fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsFamily));
+}
+
+//Exercicio E
+async function addNelsonFamily() {
+  const fileContent = await fs
+    .readFile('./simpsonsFamily.json', 'utf-8');
+
+  const simpsonsFamily = JSON.parse(fileContent);
+  simpsonsFamily.push({id: '8', name: 'Nelson Muntz'});
+  await fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsFamily));
+}
+  
+//Exercicio F
+async function replaceNelson() {
+  const fileContent = await fs
+    .readFile('./simpsonsFamily.json', 'utf-8');
+  const simpsonsFamily = JSON.parse(fileContent);
+
+  const simpsonsWithoutNelson = simpsonsFamily.filter((simpson) => simpson.id !== '8');
+  const simpsonsWithMaggie = simpsonsWithoutNelson
+    .concat([{id: '15', name: 'Maggie Simpson'}]);
+    
+    return fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsWithMaggie));
+}
+
 // A função main é apenas para termos um ponto de enrada centralizado para nosso script
 function main() {
   // readAllComASyncAwait();
   // getSimpsonById(3)
   // .then((simpson) => console.log(simpson)); // retorna o simpson de id 3
-  filterSimpsons(); // Apaga as duas posições do id informado no arquivo.
+  // filterSimpsons(); // Apaga as duas posições do id informado no arquivo.
+  // createSimpsonsFamily()
+  // addNelsonFamily();
+  replaceNelson();
 }
 
 main();
